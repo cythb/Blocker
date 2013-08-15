@@ -9,3 +9,7 @@
 
 #游戏截图
 ![界面截图](https://github.com/cythb/Blocker/raw/master/ReadmeRes/screen_shot.png)
+
+#联系我
+* cythbgy#gmail.com
+* [http://blog.mmpx.net](http://blog.mmpx.net)

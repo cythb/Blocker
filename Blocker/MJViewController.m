@@ -152,6 +152,9 @@
     if (0 == _blocksM.count) {
         self.msgLabel.text = @"恭喜，您胜利了";
         self.msgLabel.hidden = NO;
+        
+        self.tapGR.enabled = YES;
+        [self pauseGame];
     }
 }
 
