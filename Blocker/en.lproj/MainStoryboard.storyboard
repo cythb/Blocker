@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="MJViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blue.png" id="eXK-4P-K6I">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blue.png" id="ohh-P3-p7p">
+                                <rect key="frame" x="106" y="0.0" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blue.png" id="4Cs-6u-ZCI">
+                                <rect key="frame" x="212" y="0.0" width="108" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="green.png" id="9aY-8l-Csy">
+                                <rect key="frame" x="0.0" y="40" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="green.png" id="N73-WN-a1q">
+                                <rect key="frame" x="106" y="40" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="green.png" id="2vm-ur-lWV">
+                                <rect key="frame" x="212" y="40" width="108" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="red.png" id="BNh-qN-g27">
+                                <rect key="frame" x="-1" y="79" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="red.png" id="fVT-hR-TgY">
+                                <rect key="frame" x="105" y="79" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="red.png" id="Ghb-fj-XFl">
+                                <rect key="frame" x="211" y="79" width="108" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="yellow.png" id="r0W-yh-RPR">
+                                <rect key="frame" x="0.0" y="119" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="yellow.png" id="ioq-kY-mXR">
+                                <rect key="frame" x="106" y="119" width="106" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="yellow.png" id="O1A-qf-x34">
+                                <rect key="frame" x="212" y="119" width="108" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="paddle.png" id="vTs-I9-hA0">
+                                <rect key="frame" x="61" y="513" width="195" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="contentStretch" x="0.49999999999999994" y="0.49999999999999994" width="0.0" height="0.0"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YJp-l5-1bo" appends="YES" id="Rfh-6s-oQO"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ball.png" id="kDf-5v-7RW">
+                                <rect key="frame" x="149" y="492" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t5u-mu-jGi">
+                                <rect key="frame" x="20" y="238" width="280" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TIs-E6-Qdj" appends="YES" id="Hqp-Gl-MRq"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="kDf-5v-7RW" id="DNR-G2-W6P"/>
+                        <outlet property="msgLabel" destination="t5u-mu-jGi" id="12G-jg-tmc"/>
+                        <outlet property="paddle" destination="vTs-I9-hA0" id="X5E-rv-yFZ"/>
+                        <outlet property="tapGR" destination="TIs-E6-Qdj" id="gOz-8j-0J8"/>
+                        <outletCollection property="blocks" destination="r0W-yh-RPR" id="o0M-P7-B6H"/>
+                        <outletCollection property="blocks" destination="ioq-kY-mXR" id="FvX-IQ-Abu"/>
+                        <outletCollection property="blocks" destination="O1A-qf-x34" id="0sz-dB-v5i"/>
+                        <outletCollection property="blocks" destination="BNh-qN-g27" id="E37-M5-dd3"/>
+                        <outletCollection property="blocks" destination="fVT-hR-TgY" id="usE-qh-fN2"/>
+                        <outletCollection property="blocks" destination="Ghb-fj-XFl" id="K6N-PC-RVi"/>
+                        <outletCollection property="blocks" destination="9aY-8l-Csy" id="Y47-Ik-mqR"/>
+                        <outletCollection property="blocks" destination="N73-WN-a1q" id="2yC-yU-w9H"/>
+                        <outletCollection property="blocks" destination="2vm-ur-lWV" id="D0n-qL-lHN"/>
+                        <outletCollection property="blocks" destination="eXK-4P-K6I" id="qKh-hk-7Pf"/>
+                        <outletCollection property="blocks" destination="ohh-P3-p7p" id="C1D-13-X0x"/>
+                        <outletCollection property="blocks" destination="4Cs-6u-ZCI" id="8sf-ke-BKz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YJp-l5-1bo">
+                    <connections>
+                        <action selector="onPaddlePan:" destination="2" id="AXF-Mr-xbB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer enabled="NO" id="TIs-E6-Qdj">
+                    <connections>
+                        <action selector="onTapScreen:" destination="2" id="PHa-ZX-pLY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball.png" width="20" height="20"/>
+        <image name="blue.png" width="128" height="40"/>
+        <image name="green.png" width="128" height="40"/>
+        <image name="paddle.png" width="64" height="20"/>
+        <image name="red.png" width="128" height="40"/>
+        <image name="yellow.png" width="128" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
