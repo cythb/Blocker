@@ -8,4 +8,4 @@
 4. 小球碰到底部失败。
 
 #游戏截图
-![界面截图](./ReadmeRes/screen_shot.png)
+![界面截图](https://github.com/cythb/Blocker/raw/master/ReadmeRes/screen_shot.png)
