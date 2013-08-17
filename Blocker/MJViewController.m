@@ -81,7 +81,7 @@
     if (CGRectIntersectsRect(self.ball.frame, self.paddle.frame)) {
         // 小球与挡板相撞
         
-        _ballV.y *= -1;
+        _ballV.y = -ABS(_ballV.y);
         
         _ballV.x = _paddleV;
         _paddleInterval = _displayLink.timestamp;
@@ -91,7 +91,7 @@
 // 处理小球与屏幕碰撞
 - (void)handleIntersectWithScreen{
     if (CGRectGetMinY(self.ball.frame) <= 0) {  //和上面碰撞
-        _ballV.y *= -1;
+        _ballV.y = ABS(_ballV.y);;
     }
     
     // 左边
@@ -105,7 +105,7 @@
     }
     
     // 下面
-    if (CGRectGetMaxY(self.ball.frame) >= 460) {
+    if (CGRectGetMinY(self.ball.frame) >= 460) {
         self.msgLabel.text = @"您输了";
         self.msgLabel.hidden = NO;
         

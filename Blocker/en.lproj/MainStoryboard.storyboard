@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -85,6 +85,7 @@
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="TIs-E6-Qdj" appends="YES" id="Hqp-Gl-MRq"/>
+                            <outletCollection property="gestureRecognizers" destination="YJp-l5-1bo" appends="YES" id="SlG-SA-ZkQ"/>
                         </connections>
                     </view>
                     <connections>
@@ -107,16 +108,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="YJp-l5-1bo">
-                    <connections>
-                        <action selector="onPaddlePan:" destination="2" id="AXF-Mr-xbB"/>
-                    </connections>
-                </panGestureRecognizer>
                 <tapGestureRecognizer enabled="NO" id="TIs-E6-Qdj">
                     <connections>
                         <action selector="onTapScreen:" destination="2" id="PHa-ZX-pLY"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YJp-l5-1bo">
+                    <connections>
+                        <action selector="onPaddlePan:" destination="2" id="AXF-Mr-xbB"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
@@ -128,6 +129,20 @@
         <image name="red.png" width="128" height="40"/>
         <image name="yellow.png" width="128" height="40"/>
     </resources>
+    <classes>
+        <class className="MJViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MJViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onPaddlePan:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="action" name="onTapScreen:"/>
+                <relationship kind="outlet" name="ball" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="msgLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="paddle" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tapGR" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="outletCollection" name="blocks" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
