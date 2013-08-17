@@ -121,6 +121,8 @@
 
 - (void)pauseGame{
     [_displayLink invalidate];
+    
+    self.panGR.enabled = NO;
 }
 
 - (void)resetGame{
@@ -149,6 +151,9 @@
     
     // 隐藏提示
     [self.msgLabel setHidden:YES];
+    
+    // 激活拖拽手势
+    self.panGR.enabled = YES;
 }
 
 - (void)checkWin{

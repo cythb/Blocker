@@ -92,6 +92,7 @@
                         <outlet property="ball" destination="kDf-5v-7RW" id="DNR-G2-W6P"/>
                         <outlet property="msgLabel" destination="t5u-mu-jGi" id="12G-jg-tmc"/>
                         <outlet property="paddle" destination="vTs-I9-hA0" id="X5E-rv-yFZ"/>
+                        <outlet property="panGR" destination="YJp-l5-1bo" id="mdJ-db-x0x"/>
                         <outlet property="tapGR" destination="TIs-E6-Qdj" id="gOz-8j-0J8"/>
                         <outletCollection property="blocks" destination="r0W-yh-RPR" id="o0M-P7-B6H"/>
                         <outletCollection property="blocks" destination="ioq-kY-mXR" id="FvX-IQ-Abu"/>
@@ -129,20 +130,6 @@
         <image name="red.png" width="128" height="40"/>
         <image name="yellow.png" width="128" height="40"/>
     </resources>
-    <classes>
-        <class className="MJViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MJViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="onPaddlePan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="onTapScreen:"/>
-                <relationship kind="outlet" name="ball" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="msgLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="paddle" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tapGR" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="outletCollection" name="blocks" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

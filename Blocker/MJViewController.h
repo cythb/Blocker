@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *paddle;
 @property (weak, nonatomic) IBOutlet UILabel *msgLabel;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGR;
+@property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *panGR;
 
 
 - (IBAction)onPaddlePan:(UIPanGestureRecognizer *)sender;
