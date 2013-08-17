@@ -83,7 +83,7 @@
         
         _ballV.y = -ABS(_ballV.y);
         
-        _ballV.x = _paddleV;
+        _ballV.x += _paddleV;
         _paddleInterval = _displayLink.timestamp;
     }
 }
@@ -161,6 +161,12 @@
 
 #pragma mark - actions
 - (void)step:(CADisplayLink *)sender{
+    [self handleIntersectWithBlocks];
+    [self handleIntersectWithPaddle];
+    [self handleIntersectWithScreen];
+    
+    [self checkWin];
+    
     CFTimeInterval duration = 0;
     if (0 != _paddleInterval) {
         duration = (sender.timestamp - _paddleInterval);
@@ -169,12 +175,6 @@
     
     self.ball.center = CGPointMake(self.ball.center.x + _ballV.x * duration,
                                    self.ball.center.y + _ballV.y * sender.duration);
-    
-    [self handleIntersectWithBlocks];
-    [self handleIntersectWithPaddle];
-    [self handleIntersectWithScreen];
-    
-    [self checkWin];
 }
 
 - (IBAction)onPaddlePan:(UIPanGestureRecognizer *)sender {
