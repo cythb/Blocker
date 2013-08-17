@@ -84,6 +84,9 @@
         _ballV.y = -ABS(_ballV.y);
         
         _ballV.x += _paddleV;
+        // x方向设置一个最大值
+        _ballV.x = MIN(ABS(_ballV.x), 200) * _ballV.x/ABS(_ballV.x);
+        
         _paddleInterval = _displayLink.timestamp;
     }
 }
